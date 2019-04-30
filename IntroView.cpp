@@ -7,7 +7,7 @@ IntroView::IntroView() {
 	if (!arial.loadFromFile("arial.ttf")) {
 		abort();
 	}
-	if (!harington.loadFromFile("HARNGTON.ttf")) {
+	if (!harington.loadFromFile("HARNGTON.TTF")) {
 		abort();
 	}
 
