@@ -119,8 +119,10 @@ void ScoreView::draw(sf::RenderWindow &win) {
 
 	koniec.drawTo(win);
 	
+	if (board.getGameState() == FINISHED_WIN) {
+		setScore();
+	}
 	
-	setScore();
 
 	if (board.getGameState() == FINISHED_WIN) {
 		win.draw(yS);
